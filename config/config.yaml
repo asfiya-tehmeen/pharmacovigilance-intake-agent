@@ -1,0 +1,36 @@
+# Decisions from ideation.md section 12 (defaults chosen; change freely).
+years: [2023, 2024]            # VAERS report years to load
+db_path: data/processed/pv.duckdb
+results_dir: results
+raw_dir: data/raw              # put {YEAR}VAERSData.zip or the 3 CSVs per year here
+
+sample:
+  eval_size: 5000              # stratified evaluation sample (baselines run on all of it)
+  serious_fraction: 0.5        # share of serious cases in the sample (natural rate is much lower)
+  test_fraction: 0.4           # frozen test split; the rest is dev
+  llm_subset: 300              # test cases the main LLM run covers (~1.75K tokens/case -> ~3 days of free tier)
+  seed: 42
+
+llm:
+  provider: groq               # groq | gemini | ollama
+  small_model: openai/gpt-oss-20b
+  large_model: openai/gpt-oss-120b
+  gemini_model: gemini-2.5-flash
+  ollama_model: llama3.1:8b
+  temperature: 0.0
+  self_consistency_k: 3        # extra samples at temperature 0.7 for confidence
+  max_tokens: 1200
+  daily_token_budget: 190000   # stop before the free-tier limit; cache makes reruns free
+
+coding:
+  n_candidates: 45             # retrieved candidate terms shown to the LLM (per-narrative retrieval)
+  n_prior: 40                  # plus the N most frequent terms (raises candidate-recall ceiling 0.32 -> 0.56 on dev)
+  min_term_freq: 3             # vocabulary = coded terms seen >= N times in the dev split
+
+routing:
+  confidence_threshold: 0.8    # below this -> human review queue
+
+signal:
+  min_count: 3                 # minimum a-cell count for a signal
+  prr_threshold: 2.0
+  chi2_threshold: 4.0

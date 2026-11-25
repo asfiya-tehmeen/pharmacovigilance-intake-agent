@@ -1,0 +1,515 @@
+{
+  "run": "20261125-151910-191518_agent_small_retrieval",
+  "model_size": "small",
+  "mode": "retrieval",
+  "hybrid": false,
+  "perturbation": null,
+  "provider": "groq",
+  "n_cases": 16,
+  "n_llm_errors": 0,
+  "triage_lr": {
+    "recall": 1.0,
+    "precision": 0.8,
+    "f1": 0.888888888888889,
+    "specificity": 0.75,
+    "flagged_rate": 0.625,
+    "tp": 8,
+    "fp": 2,
+    "fn": 0,
+    "tn": 6,
+    "n": 16
+  },
+  "triage_llm_or_rules_only": {
+    "recall": 0.875,
+    "precision": 1.0,
+    "f1": 0.9333333333333333,
+    "specificity": 1.0,
+    "flagged_rate": 0.4375,
+    "tp": 7,
+    "fp": 0,
+    "fn": 1,
+    "tn": 8,
+    "n": 16
+  },
+  "triage_llm": {
+    "recall": 0.875,
+    "precision": 1.0,
+    "f1": 0.9333333333333333,
+    "specificity": 1.0,
+    "flagged_rate": 0.4375,
+    "tp": 7,
+    "fp": 0,
+    "fn": 1,
+    "tn": 8,
+    "n": 16
+  },
+  "triage_rules": {
+    "recall": 0.875,
+    "precision": 1.0,
+    "f1": 0.9333333333333333,
+    "specificity": 1.0,
+    "flagged_rate": 0.4375,
+    "tp": 7,
+    "fp": 0,
+    "fn": 1,
+    "tn": 8,
+    "n": 16
+  },
+  "triage_llm_or_rules_or_lr": {
+    "recall": 1.0,
+    "precision": 0.8,
+    "f1": 0.888888888888889,
+    "specificity": 0.75,
+    "flagged_rate": 0.625,
+    "tp": 8,
+    "fp": 2,
+    "fn": 0,
+    "tn": 6,
+    "n": 16,
+    "workload_at_population_prevalence": 0.3562400217286175
+  },
+  "coding": {
+    "micro_precision": 0.627906976744186,
+    "micro_recall": 0.46551724137931033,
+    "micro_f1": 0.5346534653465347,
+    "case_f1_mean": 0.624201127819549,
+    "exact_match": 0.1875,
+    "n": 16
+  },
+  "product": {
+    "micro_precision": 0.5,
+    "micro_recall": 0.0625,
+    "micro_f1": 0.1111111111111111,
+    "case_f1_mean": 0.0625,
+    "exact_match": 0.0625,
+    "n": 16
+  },
+  "product_family": {
+    "micro_precision": 1.0,
+    "micro_recall": 0.125,
+    "micro_f1": 0.2222222222222222,
+    "case_f1_mean": 0.125,
+    "exact_match": 0.125,
+    "n": 16
+  },
+  "case_correct_rate": 0.75,
+  "calibration": {
+    "self": {
+      "ece": 0.10624999999999991,
+      "auroc": 0.5416666666666667,
+      "n": 16
+    },
+    "span": {
+      "ece": 0.19375,
+      "auroc": 0.5729166666666666,
+      "n": 16
+    },
+    "triage_agree": {
+      "ece": 0.1875,
+      "auroc": 0.7083333333333333,
+      "n": 16
+    },
+    "combined": {
+      "ece": 0.16875000000000012,
+      "reliability": [
+        {
+          "bin": 5,
+          "n": 1,
+          "confidence": 0.525,
+          "accuracy": 0.0
+        },
+        {
+          "bin": 6,
+          "n": 1,
+          "confidence": 0.675,
+          "accuracy": 1.0
+        },
+        {
+          "bin": 7,
+          "n": 2,
+          "confidence": 0.7250000000000001,
+          "accuracy": 0.5
+        },
+        {
+          "bin": 9,
+          "n": 12,
+          "confidence": 0.9500000000000002,
+          "accuracy": 0.8333333333333334
+        }
+      ],
+      "auroc": 0.7291666666666666
+    },
+    "risk_coverage": [
+      {
+        "coverage": 0.0625,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.125,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.1875,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.25,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.3125,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.375,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.4375,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5,
+        "risk": 0.125,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5625,
+        "risk": 0.11111111111111116,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.625,
+        "risk": 0.09999999999999998,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.6875,
+        "risk": 0.18181818181818177,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.75,
+        "risk": 0.16666666666666663,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.8125,
+        "risk": 0.15384615384615385,
+        "threshold": 0.7375
+      },
+      {
+        "coverage": 0.875,
+        "risk": 0.2142857142857143,
+        "threshold": 0.7125
+      },
+      {
+        "coverage": 0.9375,
+        "risk": 0.19999999999999996,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 1.0,
+        "risk": 0.25,
+        "threshold": 0.525
+      }
+    ]
+  },
+  "routing": {
+    "human_review_rate": 0.3125,
+    "auto_rate": 0.6875,
+    "serious_missed_by_agent_and_rules": 0,
+    "auto_error_rate": 0.18181818181818177,
+    "reasons": {
+      "low_confidence": 4,
+      "triage_disagreement": 3,
+      "invalid_icsr": 1,
+      "uncoded_event": 1
+    }
+  },
+  "span_verifier": {
+    "cases_with_rejected_fields": 2,
+    "rejected_fields_total": 4
+  },
+  "validity": {
+    "valid_rate": 0.9375
+  },
+  "expectedness_counts": {
+    "unlisted": 20,
+    "no_label": 17,
+    "listed": 10,
+    "not_checked": 1
+  },
+  "cost": {
+    "prompt_tokens": 19008,
+    "completion_tokens": 6370,
+    "tokens_per_case": 1586.125,
+    "seconds_per_case": 7.398446887731552,
+    "escalated": 0,
+    "note": "multiply by your provider's paid $/token to get a paid-tier cost"
+  },
+  "per_term": {
+    "product storage error": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "mental status changes": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "sars-cov-2 test positive": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 5
+    },
+    "mental impairment": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "altered state of consciousness": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "covid-19": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 3
+    },
+    "atrial fibrillation": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "influenza": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1
+    },
+    "pneumonia": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "malaise": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "sinusitis": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "wheezing": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "upper respiratory tract infection": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "increased viscosity of upper respiratory secretion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "respiratory tract congestion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "hypersomnia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "sars-cov-2 test negative": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "symptom recurrence": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "upper-airway cough syndrome": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "chest x-ray normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "choking": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "productive cough": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "cough": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "respiratory symptom": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "influenza like illness": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "underdose": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "incorrect dose administered": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "breakthrough covid-19": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 0
+    },
+    "vaccine breakthrough infection": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "lung infiltration": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "respiratory failure": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "positive airway pressure therapy": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "death": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "swelling": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "erythema": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "injection site erythema": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "skin swelling": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "injection site swelling": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "covid-19 pneumonia": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "respiratory disorder": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "hospitalisation": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "chest x-ray": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "laboratory test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "endotracheal intubation": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "intensive care": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "vaccination site pain": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "pain in extremity": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "injection site pain": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "extra dose administered": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "vaccination error": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "wrong dosage formulation": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    }
+  }
+}

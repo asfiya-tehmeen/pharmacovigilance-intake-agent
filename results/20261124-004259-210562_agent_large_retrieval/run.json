@@ -1,0 +1,16 @@
+{
+  "split": "dev",
+  "n_planned": 6,
+  "model_size": "large",
+  "mode": "retrieval",
+  "hybrid": false,
+  "consistency_k": 0,
+  "provider": "groq",
+  "small_model": "openai/gpt-oss-120b",
+  "large_model": null,
+  "perturbation": null,
+  "started": "2026-11-24T00:42:59.211223",
+  "n_done": 6,
+  "stopped_early": null,
+  "finished": "2026-11-24T00:43:08.320720"
+}

@@ -1,0 +1,485 @@
+{
+  "reports": 148701,
+  "official_signals": 4876,
+  "dictionary_vs_official": {
+    "ref_signals": 4876,
+    "alt_signals": 2914,
+    "kept": 1509,
+    "lost": 3367,
+    "gained": 1405,
+    "jaccard": 0.2402483680942525,
+    "spearman_prr_shared_pairs": 0.7480390517926,
+    "shared_pairs": 17403,
+    "top50_overlap": 21,
+    "top50_changed": 29,
+    "lost_examples": [
+      [
+        "ADEN_4_7",
+        "Death"
+      ],
+      [
+        "ADEN_4_7",
+        "Pruritus"
+      ],
+      [
+        "ANTH",
+        "Abdominal pain upper"
+      ],
+      [
+        "ANTH",
+        "Allergy to vaccine"
+      ],
+      [
+        "ANTH",
+        "Chest discomfort"
+      ],
+      [
+        "ANTH",
+        "Dizziness"
+      ],
+      [
+        "ANTH",
+        "Dyspnoea"
+      ],
+      [
+        "ANTH",
+        "Erythema"
+      ],
+      [
+        "ANTH",
+        "Hyperhidrosis"
+      ],
+      [
+        "ANTH",
+        "Hypersensitivity"
+      ],
+      [
+        "ANTH",
+        "Hypoaesthesia"
+      ],
+      [
+        "ANTH",
+        "Immediate post-injection reaction"
+      ],
+      [
+        "ANTH",
+        "Injected limb mobility decreased"
+      ],
+      [
+        "ANTH",
+        "Injection site induration"
+      ],
+      [
+        "ANTH",
+        "Injection site mass"
+      ]
+    ],
+    "gained_examples": [
+      [
+        "ADEN_4_7",
+        "Swelling"
+      ],
+      [
+        "ANTH",
+        "Cellulitis"
+      ],
+      [
+        "ANTH",
+        "Fatigue"
+      ],
+      [
+        "BCG",
+        "Adverse event"
+      ],
+      [
+        "CHIK",
+        "Encephalitis"
+      ],
+      [
+        "CHIK",
+        "Heart rate"
+      ],
+      [
+        "COVID19",
+        "Abdominal discomfort"
+      ],
+      [
+        "COVID19",
+        "Abdominal distension"
+      ],
+      [
+        "COVID19",
+        "Abdominal pain upper"
+      ],
+      [
+        "COVID19",
+        "Accident"
+      ],
+      [
+        "COVID19",
+        "Acupuncture"
+      ],
+      [
+        "COVID19",
+        "Acute chest syndrome"
+      ],
+      [
+        "COVID19",
+        "Acute macular neuroretinopathy"
+      ],
+      [
+        "COVID19",
+        "Ageusia"
+      ],
+      [
+        "COVID19",
+        "Alanine aminotransferase normal"
+      ]
+    ]
+  },
+  "nearest_vs_official": {
+    "ref_signals": 4876,
+    "alt_signals": 3504,
+    "kept": 1505,
+    "lost": 3371,
+    "gained": 1999,
+    "jaccard": 0.21890909090909091,
+    "spearman_prr_shared_pairs": 0.6885530688865055,
+    "shared_pairs": 19132,
+    "top50_overlap": 24,
+    "top50_changed": 26,
+    "lost_examples": [
+      [
+        "ADEN_4_7",
+        "Death"
+      ],
+      [
+        "ADEN_4_7",
+        "Pruritus"
+      ],
+      [
+        "ANTH",
+        "Abdominal pain upper"
+      ],
+      [
+        "ANTH",
+        "Allergy to vaccine"
+      ],
+      [
+        "ANTH",
+        "Chest discomfort"
+      ],
+      [
+        "ANTH",
+        "Dizziness"
+      ],
+      [
+        "ANTH",
+        "Dyspnoea"
+      ],
+      [
+        "ANTH",
+        "Erythema"
+      ],
+      [
+        "ANTH",
+        "Hyperhidrosis"
+      ],
+      [
+        "ANTH",
+        "Hypersensitivity"
+      ],
+      [
+        "ANTH",
+        "Hypoaesthesia"
+      ],
+      [
+        "ANTH",
+        "Immediate post-injection reaction"
+      ],
+      [
+        "ANTH",
+        "Injected limb mobility decreased"
+      ],
+      [
+        "ANTH",
+        "Injection site induration"
+      ],
+      [
+        "ANTH",
+        "Injection site mass"
+      ]
+    ],
+    "gained_examples": [
+      [
+        "ADEN_4_7",
+        "Swelling"
+      ],
+      [
+        "ANTH",
+        "Cellulitis"
+      ],
+      [
+        "ANTH",
+        "Fatigue"
+      ],
+      [
+        "ANTH",
+        "Injection site infection"
+      ],
+      [
+        "ANTH",
+        "Joint warmth"
+      ],
+      [
+        "ANTH",
+        "Muscle twitching"
+      ],
+      [
+        "ANTH",
+        "Near death experience"
+      ],
+      [
+        "CHIK",
+        "Injection site joint pain"
+      ],
+      [
+        "CHIK",
+        "Muscle strain"
+      ],
+      [
+        "CHIK",
+        "Post vaccination fever"
+      ],
+      [
+        "CHIK",
+        "Swelling"
+      ],
+      [
+        "COVID19",
+        "Abdominal discomfort"
+      ],
+      [
+        "COVID19",
+        "Abdominal distension"
+      ],
+      [
+        "COVID19",
+        "Abdominal pain upper"
+      ],
+      [
+        "COVID19",
+        "Abnormal dreams"
+      ]
+    ]
+  },
+  "agent_error_model": {
+    "from_run": "dev_v1_150",
+    "n_cases": 150,
+    "global_recall": 0.4190871369294606,
+    "fp_per_case": 0.8733333333333333
+  },
+  "agent_simulated_vs_official": {
+    "alt_signals": {
+      "mean": 2643.2,
+      "min": 2601.0,
+      "max": 2678.0
+    },
+    "kept": {
+      "mean": 2254.2,
+      "min": 2243.0,
+      "max": 2268.0
+    },
+    "lost": {
+      "mean": 2621.8,
+      "min": 2608.0,
+      "max": 2633.0
+    },
+    "gained": {
+      "mean": 389.0,
+      "min": 358.0,
+      "max": 419.0
+    },
+    "jaccard": {
+      "mean": 0.42815472256213827,
+      "min": 0.42360717658168084,
+      "max": 0.4311559702913731
+    },
+    "top50_overlap": {
+      "mean": 24.4,
+      "min": 18.0,
+      "max": 28.0
+    },
+    "example_seed0": {
+      "lost_examples": [
+        [
+          "ADEN_4_7",
+          "Death"
+        ],
+        [
+          "ADEN_4_7",
+          "Pruritus"
+        ],
+        [
+          "ANTH",
+          "Abdominal pain upper"
+        ],
+        [
+          "ANTH",
+          "Allergy to vaccine"
+        ],
+        [
+          "ANTH",
+          "Burning sensation"
+        ],
+        [
+          "ANTH",
+          "Chest discomfort"
+        ],
+        [
+          "ANTH",
+          "Chest pain"
+        ],
+        [
+          "ANTH",
+          "Dyspnoea"
+        ],
+        [
+          "ANTH",
+          "Erythema"
+        ],
+        [
+          "ANTH",
+          "Hypersensitivity"
+        ],
+        [
+          "ANTH",
+          "Immediate post-injection reaction"
+        ],
+        [
+          "ANTH",
+          "Injected limb mobility decreased"
+        ],
+        [
+          "ANTH",
+          "Injection site induration"
+        ],
+        [
+          "ANTH",
+          "Injection site swelling"
+        ],
+        [
+          "ANTH",
+          "Limb discomfort"
+        ]
+      ],
+      "gained_examples": [
+        [
+          "ADEN_4_7",
+          "Herpes zoster"
+        ],
+        [
+          "ADEN_4_7",
+          "Injection site erythema"
+        ],
+        [
+          "ANTH",
+          "Autonomic neuropathy"
+        ],
+        [
+          "ANTH",
+          "Muscular weakness"
+        ],
+        [
+          "CHIK",
+          "Injection site pain"
+        ],
+        [
+          "CHIK",
+          "Muscular weakness"
+        ],
+        [
+          "COVID19",
+          "Abdominal pain lower"
+        ],
+        [
+          "COVID19",
+          "Ammonia increased"
+        ],
+        [
+          "COVID19",
+          "Angiogram pulmonary"
+        ],
+        [
+          "COVID19",
+          "Asthma"
+        ],
+        [
+          "COVID19",
+          "Basophil percentage decreased"
+        ],
+        [
+          "COVID19",
+          "Blood albumin decreased"
+        ],
+        [
+          "COVID19",
+          "Blood bilirubin normal"
+        ],
+        [
+          "COVID19",
+          "Blood calcium normal"
+        ],
+        [
+          "COVID19",
+          "Blood chloride normal"
+        ]
+      ]
+    }
+  },
+  "agent_direct_on_sample": {
+    "ref_signals": 6,
+    "alt_signals": 3,
+    "kept": 1,
+    "lost": 5,
+    "gained": 2,
+    "jaccard": 0.125,
+    "spearman_prr_shared_pairs": 0.9464576746205228,
+    "shared_pairs": 136,
+    "top50_overlap": 1,
+    "top50_changed": 49,
+    "lost_examples": [
+      [
+        "COVID19",
+        "COVID-19"
+      ],
+      [
+        "COVID19",
+        "SARS-CoV-2 test positive"
+      ],
+      [
+        "COVID19",
+        "Vaccine breakthrough infection"
+      ],
+      [
+        "HEP",
+        "Product administered to patient of inappropriate age"
+      ],
+      [
+        "MMRV",
+        "Product administered to patient of inappropriate age"
+      ]
+    ],
+    "gained_examples": [
+      [
+        "VARZOS",
+        "Herpes zoster"
+      ],
+      [
+        "VARZOS",
+        "Pain"
+      ]
+    ]
+  },
+  "error_level_sweep_file": "error_level_sweep.csv"
+}

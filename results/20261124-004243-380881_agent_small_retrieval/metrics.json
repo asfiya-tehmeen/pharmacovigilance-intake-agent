@@ -1,0 +1,132 @@
+{
+  "run": "20261124-004243-380881_agent_small_retrieval",
+  "model_size": "small",
+  "mode": "retrieval",
+  "hybrid": false,
+  "perturbation": null,
+  "provider": "groq",
+  "n_cases": 1,
+  "n_llm_errors": 0,
+  "triage_llm": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "f1": 0.0,
+    "specificity": 1.0,
+    "flagged_rate": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1,
+    "n": 1
+  },
+  "triage_rules": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "f1": 0.0,
+    "specificity": 1.0,
+    "flagged_rate": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1,
+    "n": 1
+  },
+  "triage_llm_or_rules": {
+    "recall": 0.0,
+    "precision": 0.0,
+    "f1": 0.0,
+    "specificity": 1.0,
+    "flagged_rate": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 1,
+    "n": 1,
+    "workload_at_population_prevalence": 0.0
+  },
+  "coding": {
+    "micro_precision": 0.5,
+    "micro_recall": 1.0,
+    "micro_f1": 0.6666666666666666,
+    "case_f1_mean": 0.6666666666666666,
+    "exact_match": 0.0,
+    "n": 1
+  },
+  "product": {
+    "micro_precision": 0.0,
+    "micro_recall": 0.0,
+    "micro_f1": 0.0,
+    "case_f1_mean": 0.0,
+    "exact_match": 0.0,
+    "n": 1
+  },
+  "product_family": {
+    "micro_precision": 0.0,
+    "micro_recall": 0.0,
+    "micro_f1": 0.0,
+    "case_f1_mean": 0.0,
+    "exact_match": 0.0,
+    "n": 1
+  },
+  "case_correct_rate": 1.0,
+  "calibration": {
+    "combined": {
+      "ece": 0.07499999999999996,
+      "reliability": [
+        {
+          "bin": 9,
+          "n": 1,
+          "confidence": 0.925,
+          "accuracy": 1.0
+        }
+      ],
+      "auroc": null
+    },
+    "risk_coverage": [
+      {
+        "coverage": 1.0,
+        "risk": 0.0,
+        "threshold": 0.925
+      }
+    ]
+  },
+  "routing": {
+    "human_review_rate": 1.0,
+    "auto_rate": 0.0,
+    "serious_missed_by_agent_and_rules": 0,
+    "auto_error_rate": null,
+    "reasons": {
+      "invalid_icsr": 1
+    }
+  },
+  "span_verifier": {
+    "cases_with_rejected_fields": 0,
+    "rejected_fields_total": 0
+  },
+  "validity": {
+    "valid_rate": 0.0
+  },
+  "expectedness_counts": {
+    "unlisted": 2
+  },
+  "cost": {
+    "prompt_tokens": 829,
+    "completion_tokens": 297,
+    "tokens_per_case": 1126.0,
+    "seconds_per_case": 1.7799854278564453,
+    "escalated": 0,
+    "note": "multiply by your provider's paid $/token to get a paid-tier cost"
+  },
+  "per_term": {
+    "extra dose administered": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "incorrect dose administered": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    }
+  }
+}

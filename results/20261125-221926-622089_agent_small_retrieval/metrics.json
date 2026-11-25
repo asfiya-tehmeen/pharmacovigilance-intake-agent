@@ -1,0 +1,1541 @@
+{
+  "run": "20261125-221926-622089_agent_small_retrieval",
+  "model_size": "small",
+  "mode": "retrieval",
+  "hybrid": false,
+  "perturbation": null,
+  "provider": "groq",
+  "n_cases": 48,
+  "n_llm_errors": 0,
+  "triage_lr": {
+    "recall": 1.0,
+    "precision": 0.8064516129032258,
+    "f1": 0.8928571428571428,
+    "specificity": 0.7391304347826086,
+    "flagged_rate": 0.6458333333333334,
+    "tp": 25,
+    "fp": 6,
+    "fn": 0,
+    "tn": 17,
+    "n": 48
+  },
+  "triage_llm_or_rules_only": {
+    "recall": 0.76,
+    "precision": 0.8636363636363636,
+    "f1": 0.8085106382978724,
+    "specificity": 0.8695652173913043,
+    "flagged_rate": 0.4583333333333333,
+    "tp": 19,
+    "fp": 3,
+    "fn": 6,
+    "tn": 20,
+    "n": 48
+  },
+  "triage_llm": {
+    "recall": 0.68,
+    "precision": 0.9444444444444444,
+    "f1": 0.7906976744186047,
+    "specificity": 0.9565217391304348,
+    "flagged_rate": 0.375,
+    "tp": 17,
+    "fp": 1,
+    "fn": 8,
+    "tn": 22,
+    "n": 48
+  },
+  "triage_rules": {
+    "recall": 0.6,
+    "precision": 0.8823529411764706,
+    "f1": 0.7142857142857143,
+    "specificity": 0.9130434782608695,
+    "flagged_rate": 0.3541666666666667,
+    "tp": 15,
+    "fp": 2,
+    "fn": 10,
+    "tn": 21,
+    "n": 48
+  },
+  "triage_llm_or_rules_or_lr": {
+    "recall": 1.0,
+    "precision": 0.7575757575757576,
+    "f1": 0.8620689655172413,
+    "specificity": 0.6521739130434783,
+    "flagged_rate": 0.6875,
+    "tp": 25,
+    "fp": 8,
+    "fn": 0,
+    "tn": 15,
+    "n": 48,
+    "workload_at_population_prevalence": 0.4402087145466239
+  },
+  "coding": {
+    "micro_precision": 0.6686390532544378,
+    "micro_recall": 0.40213523131672596,
+    "micro_f1": 0.5022222222222221,
+    "case_f1_mean": 0.57583819004655,
+    "exact_match": 0.16666666666666666,
+    "n": 48
+  },
+  "product": {
+    "micro_precision": 0.75,
+    "micro_recall": 0.21818181818181817,
+    "micro_f1": 0.3380281690140845,
+    "case_f1_mean": 0.25,
+    "exact_match": 0.25,
+    "n": 48
+  },
+  "product_family": {
+    "micro_precision": 1.0,
+    "micro_recall": 0.2962962962962963,
+    "micro_f1": 0.45714285714285713,
+    "case_f1_mean": 0.3263888888888889,
+    "exact_match": 0.3125,
+    "n": 48
+  },
+  "case_correct_rate": 0.5625,
+  "calibration": {
+    "self": {
+      "ece": 0.28645833333333326,
+      "auroc": 0.7063492063492064,
+      "n": 48
+    },
+    "span": {
+      "ece": 0.44444444444444436,
+      "auroc": 0.48148148148148145,
+      "n": 48
+    },
+    "triage_agree": {
+      "ece": 0.29166666666666663,
+      "auroc": 0.6878306878306879,
+      "n": 48
+    },
+    "combined": {
+      "ece": 0.31731666666666664,
+      "reliability": [
+        {
+          "bin": 4,
+          "n": 1,
+          "confidence": 0.45,
+          "accuracy": 0.0
+        },
+        {
+          "bin": 5,
+          "n": 1,
+          "confidence": 0.5875,
+          "accuracy": 1.0
+        },
+        {
+          "bin": 6,
+          "n": 10,
+          "confidence": 0.67125,
+          "accuracy": 0.1
+        },
+        {
+          "bin": 7,
+          "n": 3,
+          "confidence": 0.7125,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "bin": 9,
+          "n": 33,
+          "confidence": 0.9551121212121212,
+          "accuracy": 0.696969696969697
+        }
+      ],
+      "auroc": 0.7072310405643739
+    },
+    "risk_coverage": [
+      {
+        "coverage": 0.020833333333333332,
+        "risk": 1.0,
+        "threshold": 0.9812
+      },
+      {
+        "coverage": 0.041666666666666664,
+        "risk": 0.5,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.0625,
+        "risk": 0.33333333333333337,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.08333333333333333,
+        "risk": 0.25,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.10416666666666667,
+        "risk": 0.19999999999999996,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.125,
+        "risk": 0.16666666666666663,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.14583333333333334,
+        "risk": 0.1428571428571429,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.16666666666666666,
+        "risk": 0.25,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.1875,
+        "risk": 0.2222222222222222,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.20833333333333334,
+        "risk": 0.19999999999999996,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.22916666666666666,
+        "risk": 0.18181818181818177,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.25,
+        "risk": 0.16666666666666663,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.2708333333333333,
+        "risk": 0.23076923076923073,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.2916666666666667,
+        "risk": 0.2142857142857143,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.3125,
+        "risk": 0.19999999999999996,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.3333333333333333,
+        "risk": 0.25,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.3541666666666667,
+        "risk": 0.23529411764705888,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.375,
+        "risk": 0.2222222222222222,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.3958333333333333,
+        "risk": 0.26315789473684215,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.4166666666666667,
+        "risk": 0.30000000000000004,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.4375,
+        "risk": 0.2857142857142857,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.4583333333333333,
+        "risk": 0.2727272727272727,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.4791666666666667,
+        "risk": 0.26086956521739135,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5,
+        "risk": 0.29166666666666663,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5208333333333334,
+        "risk": 0.28,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5416666666666666,
+        "risk": 0.2692307692307693,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5625,
+        "risk": 0.2592592592592593,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.5833333333333334,
+        "risk": 0.25,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.6041666666666666,
+        "risk": 0.24137931034482762,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.625,
+        "risk": 0.2666666666666667,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.6458333333333334,
+        "risk": 0.29032258064516125,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.6666666666666666,
+        "risk": 0.28125,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.6875,
+        "risk": 0.303030303030303,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.7083333333333334,
+        "risk": 0.32352941176470584,
+        "threshold": 0.7125
+      },
+      {
+        "coverage": 0.7291666666666666,
+        "risk": 0.3142857142857143,
+        "threshold": 0.7125
+      },
+      {
+        "coverage": 0.75,
+        "risk": 0.3055555555555556,
+        "threshold": 0.7125
+      },
+      {
+        "coverage": 0.7708333333333334,
+        "risk": 0.29729729729729726,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.7916666666666666,
+        "risk": 0.3157894736842105,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.8125,
+        "risk": 0.33333333333333337,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.8333333333333334,
+        "risk": 0.35,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.8541666666666666,
+        "risk": 0.36585365853658536,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.875,
+        "risk": 0.38095238095238093,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.8958333333333334,
+        "risk": 0.39534883720930236,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.9166666666666666,
+        "risk": 0.40909090909090906,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.9375,
+        "risk": 0.4222222222222223,
+        "threshold": 0.675
+      },
+      {
+        "coverage": 0.9583333333333334,
+        "risk": 0.4347826086956522,
+        "threshold": 0.6375
+      },
+      {
+        "coverage": 0.9791666666666666,
+        "risk": 0.42553191489361697,
+        "threshold": 0.5875
+      },
+      {
+        "coverage": 1.0,
+        "risk": 0.4375,
+        "threshold": 0.45
+      }
+    ]
+  },
+  "routing": {
+    "human_review_rate": 0.4583333333333333,
+    "auto_rate": 0.5416666666666667,
+    "serious_missed_by_agent_and_rules": 0,
+    "auto_error_rate": 0.34615384615384615,
+    "reasons": {
+      "low_confidence": 15,
+      "triage_disagreement": 15,
+      "uncoded_event": 7,
+      "invalid_icsr": 6
+    }
+  },
+  "span_verifier": {
+    "cases_with_rejected_fields": 1,
+    "rejected_fields_total": 1
+  },
+  "validity": {
+    "valid_rate": 0.875
+  },
+  "expectedness_counts": {
+    "unlisted": 90,
+    "listed": 41,
+    "no_label": 41,
+    "not_checked": 10
+  },
+  "cost": {
+    "prompt_tokens": 61495,
+    "completion_tokens": 20593,
+    "tokens_per_case": 1710.1666666666667,
+    "seconds_per_case": 10.632573301593462,
+    "escalated": 0,
+    "note": "multiply by your provider's paid $/token to get a paid-tier cost"
+  },
+  "per_term": {
+    "critical illness": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "atrial fibrillation": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 0
+    },
+    "general physical health deterioration": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "urinary tract infection": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "death": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "mental status changes": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "chest x-ray normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "covid-19": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 6
+    },
+    "sepsis": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "sars-cov-2 test positive": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 7
+    },
+    "hypophagia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "condition aggravated": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "urine analysis abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "decubitus ulcer": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "intensive care": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "wrong product administered": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "no adverse event": {
+      "tp": 7,
+      "fp": 1,
+      "fn": 0
+    },
+    "incorrect product formulation administered": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "brain hypoxia": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "nasal congestion": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "oxygen saturation decreased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "dyspnoea": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 1
+    },
+    "hospitalisation": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 0
+    },
+    "cough": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "hypoxia": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "abdominal pain": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "vomiting": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "nausea": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "product storage error": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+    },
+    "fibrin d dimer": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "computerised tomogram thorax abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "c-reactive protein increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "pleural effusion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "troponin normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "acute respiratory failure": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "white blood cell count increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "anticoagulant therapy": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "blood gases": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood potassium decreased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pneumonia": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "effusion": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "chest x-ray abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pneumonia viral": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "productive cough": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 0
+    },
+    "face injury": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "headache": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 0
+    },
+    "dizziness": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1
+    },
+    "injury": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "fall": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "heart rate increased": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "muscular weakness": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0
+    },
+    "syncope": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "confusional state": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1
+    },
+    "loss of consciousness": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "asthenia": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 2
+    },
+    "chills": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "head injury": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "injection site rash": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "arthralgia": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "pyrexia": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1
+    },
+    "myalgia": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "pain in extremity": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0
+    },
+    "product temperature excursion issue": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "covid-19 pneumonia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "inappropriate antidiuretic hormone secretion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "fluid intake restriction": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pulmonary hypertension": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "pneumonia bacterial": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "respiratory disorder": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood sodium decreased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "superinfection": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "hyponatraemia": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "pulmonary fibrosis": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "diuretic therapy": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "infusion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "malignant neoplasm progression": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "radiotherapy": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "disease progression": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "lung neoplasm malignant": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "angiogram pulmonary abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "sinus congestion": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "influenza virus test negative": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "respiratory syncytial virus test positive": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "decreased appetite": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "sars-cov-2 test negative": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "respiratory tract congestion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "viral test positive": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "pain": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1
+    },
+    "injection": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "chronic obstructive pulmonary disease": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "respiratory failure": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "palpitations": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "tilt table test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "memory impairment": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "visual impairment": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pollakiuria": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "hyperhidrosis": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "tachycardia": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "heart rate": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "migraine": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "loss of personal independence in daily activities": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "brain fog": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "fatigue": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 1
+    },
+    "laboratory test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "blood test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "new daily persistent headache": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "anxiety": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "computerised tomogram": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "postural orthostatic tachycardia syndrome": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "magnetic resonance imaging": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "sinus tachycardia": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "feeling abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pulmonary embolism": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "general symptom": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "product expiration date issue": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "expired product administered": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "blood pressure decreased": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "hypotension": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "bloody discharge": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "rectal haemorrhage": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "diarrhoea haemorrhagic": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "extra dose administered": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "disability": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "neuropathy peripheral": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "paraplegia": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "blood thyroid stimulating hormone": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "renal impairment": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "mood altered": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "obstructive sleep apnoea syndrome": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "discharge": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "acute kidney injury": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "culture positive": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "metabolic function test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "hypertension": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "blood creatinine increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "bradycardia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "neurological symptom": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "electrocardiogram ambulatory": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "dysuria": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "chronic kidney disease": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "full blood count": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "white blood cells urine positive": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "hemiparesis": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "mobility decreased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "cerebrovascular accident": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "cystitis": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "culture urine": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "proteus test positive": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "urine analysis": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "facial paresis": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "thyroxine free": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "differential white blood cell count": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "resuscitation": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "myocardial infarction": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "product label issue": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "vaccine breakthrough infection": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 1
+    },
+    "breakthrough covid-19": {
+      "tp": 0,
+      "fp": 4,
+      "fn": 0
+    },
+    "poor quality product administered": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "drug ineffective": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "blood electrolytes": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood urea": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "influenza a virus test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "gene mutation identification test negative": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "liver function test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "sars-cov-2 test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood creatinine": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood albumin": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "dyskinesia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "staphylococcus test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "seizure": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1
+    },
+    "polymerase chain reaction": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood calcium": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "infantile spasms": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "movement disorder": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "blood chloride": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood potassium": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood glucose": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "carbon dioxide": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "electroencephalogram": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "ammonia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood sodium": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood magnesium": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "magnetic resonance imaging head": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood phosphorus": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "influenza b virus test": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "somnolence": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "systemic inflammatory response syndrome": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "hla-b*27 assay": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "rheumatoid factor": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "synovial fluid analysis abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "electromyogram normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "ultrasound scan abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "red blood cell sedimentation rate increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "autoimmune disorder": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "inflammatory marker increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "impaired healing": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "pruritus": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "skin lesion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "urticaria": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "arrhythmia": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "malaise": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "administration site reaction": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "lymphadenopathy": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "injection site induration": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "axillary mass": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "injection site erythema": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "erythema": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "rash erythematous": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "injection site swelling": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "rhinorrhoea": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "injection site reaction": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "skin warm": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "thrombosis": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "portal vein thrombosis": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "herpes zoster": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "computerised tomogram head normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "magnetic resonance imaging head abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "electroencephalogram abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood test normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "blood glucose normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "essential hypertension": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "essential thrombocythaemia": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "coronary artery disease": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    }
+  }
+}

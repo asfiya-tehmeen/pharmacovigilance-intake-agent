@@ -1,0 +1,200 @@
+  25/150 cases  (3s, 128576 tokens today)
+  50/150 cases  (8s, 130225 tokens today)
+  75/150 cases  (9s, 130225 tokens today)
+  100/150 cases  (316s, 176491 tokens today)
+C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261125-140542-058063_agent_large_retrieval
+{
+  "run": "20261125-140542-058063_agent_large_retrieval",
+  "model_size": "large",
+  "mode": "retrieval",
+  "hybrid": false,
+  "perturbation": null,
+  "provider": "groq",
+  "n_cases": 107,
+  "n_llm_errors": 1,
+  "triage_lr": {
+    "recall": 0.9655172413793104,
+    "precision": 0.8,
+    "f1": 0.8750000000000001,
+    "specificity": 0.7142857142857143,
+    "flagged_rate": 0.6542056074766355,
+    "tp": 56,
+    "fp": 14,
+    "fn": 2,
+    "tn": 35,
+    "n": 107
+  },
+  "triage_llm_or_rules_only": {
+    "recall": 0.7931034482758621,
+    "precision": 0.9019607843137255,
+    "f1": 0.8440366972477066,
+    "specificity": 0.8979591836734694,
+    "flagged_rate": 0.4766355140186916,
+    "tp": 46,
+    "fp": 5,
+    "fn": 12,
+    "tn": 44,
+    "n": 107
+  },
+  "triage_llm": {
+    "recall": 0.6724137931034483,
+    "precision": 0.9069767441860465,
+    "f1": 0.7722772277227723,
+    "specificity": 0.9183673469387755,
+    "flagged_rate": 0.40186915887850466,
+    "tp": 39,
+    "fp": 4,
+    "fn": 19,
+    "tn": 45,
+    "n": 107
+  },
+  "triage_rules": {
+    "recall": 0.6896551724137931,
+    "precision": 0.9523809523809523,
+    "f1": 0.7999999999999999,
+    "specificity": 0.9591836734693877,
+    "flagged_rate": 0.3925233644859813,
+    "tp": 40,
+    "fp": 2,
+    "fn": 18,
+    "tn": 47,
+    "n": 107
+  },
+  "triage_llm_or_rules_or_lr": {
+    "recall": 0.9827586206896551,
+    "precision": 0.7702702702702703,
+    "f1": 0.8636363636363636,
+    "specificity": 0.6530612244897959,
+    "flagged_rate": 0.6915887850467289,
+    "tp": 57,
+    "fp": 17,
+    "fn": 1,
+    "tn": 32,
+    "n": 107,
+    "workload_at_population_prevalence": 0.4370047944000055
+  },
+  "coding": {
+    "micro_precision": 0.6183574879227053,
+    "micro_recall": 0.4785046728971963,
+    "micro_f1": 0.5395152792413066,
+    "case_f1_mean": 0.558392153641813,
+    "exact_match": 0.1588785046728972,
+    "n": 107
+  },
+  "product": {
+    "micro_precision": 0.8,
+    "micro_recall": 0.25196850393700787,
+    "micro_f1": 0.3832335329341317,
+    "case_f1_mean": 0.28878504672897193,
+    "exact_match": 0.2803738317757009,
+    "n": 107
+  },
+  "product_family": {
+    "micro_precision": 0.9,
+    "micro_recall": 0.288,
+    "micro_f1": 0.43636363636363634,
+    "case_f1_mean": 0.3261682242990654,
+    "exact_match": 0.3177570093457944,
+    "n": 107
+  },
+  "case_correct_rate": 0.5046728971962616,
+  "calibration": {
+    "self": {
+      "ece": 0.3951886792452833,
+      "auroc": 0.6518874643874643,
+      "n": 106
+    },
+    "span": {
+      "ece": 0.46862917881230864,
+      "auroc": 0.5240384615384616,
+      "n": 106
+    },
+    "triage_agree": {
+      "ece": 0.3113207547169811,
+      "auroc": 0.6851851851851851,
+      "n": 106
+    },
+    "combined": {
+      "ece": 0.3582775700934579,
+      "reliability": [
+        {
+          "bin": 0,
+          "n": 1,
+          "confidence": 0.0,
+          "accuracy": 0.0
+        },
+        {
+          "bin": 4,
+          "n": 1,
+          "confidence": 0.4875,
+          "accuracy": 0.0
+        },
+        {
+          "bin": 5,
+          "n": 2,
+          "confidence": 0.575,
+          "accuracy": 0.5
+        },
+        {
+          "bin": 6,
+          "n": 4,
+          "confidence": 0.6506000000000001,
+          "accuracy": 0.25
+        },
+        {
+          "bin": 7,
+          "n": 29,
+          "confidence": 0.7172344827586206,
+          "accuracy": 0.20689655172413793
+        },
+        {
+          "bin": 8,
+          "n": 3,
+          "confidence": 0.8680333333333333,
+          "accuracy": 0.3333333333333333
+        },
+        {
+          "bin": 9,
+          "n": 67,
+          "confidence": 0.9655507462686568,
+          "accuracy": 0.6716417910447762
+        }
+      ],
+      "auroc": 0.7762054507337526
+    }
+  },
+  "routing": {
+    "human_review_rate": 0.45794392523364486,
+    "auto_rate": 0.5420560747663552,
+    "serious_missed_by_agent_and_rules": 1,
+    "auto_error_rate": 0.3620689655172413,
+    "reasons": {
+      "low_confidence": 36,
+      "triage_disagreement": 33,
+      "uncoded_event": 14,
+      "invalid_icsr": 7,
+      "llm_error": 1
+    }
+  },
+  "span_verifier": {
+    "cases_with_rejected_fields": 14,
+    "rejected_fields_total": 22
+  },
+  "validity": {
+    "valid_rate": 0.9339622641509434
+  },
+  "expectedness_counts": {
+    "unlisted": 216,
+    "no_label": 120,
+    "listed": 94,
+    "not_checked": 17
+  },
+  "cost": {
+    "prompt_tokens": 136049,
+    "completion_tokens": 55363,
+    "tokens_per_case": 1788.8971962616822,
+    "seconds_per_case": 11.334961276188075,
+    "escalated": 0,
+    "note": "multiply by your provider's paid $/token to get a paid-tier cost"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "n_dev": 3000,
+  "n_test": 2000,
+  "vocab_size": 4832,
+  "population_serious_rate": 0.14165336230482337,
+  "triage_rules": {
+    "recall": 0.624,
+    "precision": 0.8432432432432433,
+    "f1": 0.7172413793103449,
+    "specificity": 0.884,
+    "flagged_rate": 0.37,
+    "tp": 624,
+    "fp": 116,
+    "fn": 376,
+    "tn": 884,
+    "n": 2000,
+    "workload_at_population_prevalence": 0.18795990805085028
+  },
+  "triage_lr": {
+    "recall": 0.985,
+    "precision": 0.7836117740652346,
+    "f1": 0.872840053167922,
+    "specificity": 0.728,
+    "flagged_rate": 0.6285,
+    "tp": 985,
+    "fp": 272,
+    "fn": 15,
+    "tn": 728,
+    "n": 2000,
+    "threshold_dev_99recall": 0.18813444530512408,
+    "auroc": 0.978875,
+    "workload_at_99_recall_oracle": {
+      "target_recall": 0.99,
+      "workload": 0.651,
+      "threshold": 0.1622534426752697,
+      "achieved_recall": 0.99
+    },
+    "workload_at_population_prevalence": 0.3729988473233391
+  },
+  "coding_dictionary": {
+    "micro_precision": 0.453037037037037,
+    "micro_recall": 0.2983705727388038,
+    "micro_f1": 0.3597858697570445,
+    "case_f1_mean": 0.29013649990289553,
+    "exact_match": 0.031,
+    "n": 2000
+  },
+  "coding_nearest": {
+    "micro_precision": 0.41222750368792,
+    "micro_recall": 0.24538979412625622,
+    "micro_f1": 0.3076452599388379,
+    "case_f1_mean": 0.28784988242052534,
+    "exact_match": 0.0395,
+    "n": 2000
+  },
+  "gold_terms_in_vocab": 0.9838032978827203,
+  "candidate_recall_ceiling": 0.555956678700361,
+  "product_dictionary": {
+    "micro_precision": 0.5338434373160683,
+    "micro_recall": 0.3923010380622837,
+    "micro_f1": 0.45225629518823235,
+    "case_f1_mean": 0.37057499999999993,
+    "exact_match": 0.263,
+    "n": 2000
+  },
+  "product_dictionary_family": {
+    "micro_precision": 0.644496762801648,
+    "micro_recall": 0.477124183006536,
+    "micro_f1": 0.5483224837255883,
+    "case_f1_mean": 0.44760912698412697,
+    "exact_match": 0.32,
+    "n": 2000
+  }
+}

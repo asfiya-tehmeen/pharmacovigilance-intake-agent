@@ -1,0 +1,26 @@
+{
+  "n": 400,
+  "baselines": {
+    "clean": {
+      "rules_recall": 0.65,
+      "dictionary_f1": 0.36391625615763556
+    },
+    "typos": {
+      "rules_recall": 0.615,
+      "dictionary_f1": 0.3509326588681631
+    },
+    "abbreviations": {
+      "rules_recall": 0.64,
+      "dictionary_f1": 0.3501597444089457
+    },
+    "lay_language": {
+      "rules_recall": 0.65,
+      "dictionary_f1": 0.3006154842889537
+    },
+    "messy": {
+      "rules_recall": 0.63,
+      "dictionary_f1": 0.3594873397936856
+    }
+  },
+  "agent_runs": {}
+}

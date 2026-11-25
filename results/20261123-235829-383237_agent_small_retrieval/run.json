@@ -1,0 +1,16 @@
+{
+  "split": "dev",
+  "n_planned": 150,
+  "model_size": "small",
+  "mode": "retrieval",
+  "hybrid": false,
+  "consistency_k": 0,
+  "provider": "groq",
+  "small_model": "openai/gpt-oss-20b",
+  "large_model": null,
+  "perturbation": null,
+  "started": "2026-11-23T23:58:29.385096",
+  "n_done": 132,
+  "stopped_early": "provider daily limit: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m852nhzsevpvfg2rvn5b8xfa` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199294, Req",
+  "finished": "2026-11-24T00:18:51.221788"
+}

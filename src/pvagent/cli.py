@@ -53,6 +53,9 @@ def main(argv=None):
     rb.add_argument("--baselines-only", action="store_true", help="skip the LLM (free): rules + dictionary only")
     rb.add_argument("--model", default="small", choices=["small", "large"])
     rb.add_argument("--provider", choices=["groq", "gemini", "ollama"])
+    cb = sub.add_parser("calibrate", help="fit a confidence calibrator on a dev run, evaluate on a test run")
+    cb.add_argument("--dev", required=True)
+    cb.add_argument("--test", required=True)
     sub.add_parser("budget", help="show today's token usage per model")
     sub.add_parser("check", help="check keys, data files and DB state")
     sub.add_parser("review", help="launch the Streamlit human-review queue")
@@ -105,6 +108,9 @@ def main(argv=None):
         from .evaluation.experiments import run_robustness
         d = run_robustness(a.limit, a.model, a.provider, with_agent=not a.baselines_only)
         _print(json.loads((d / "metrics.json").read_text()))
+    elif a.cmd == "calibrate":
+        from .evaluation.calibrate import run_calibration
+        _print(run_calibration(Path(a.dev), Path(a.test)))
     elif a.cmd == "budget":
         import sqlite3
         p = path("data/cache/llm_cache.sqlite")

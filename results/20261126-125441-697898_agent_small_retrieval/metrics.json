@@ -1,0 +1,223 @@
+{
+  "run": "20261126-125441-697898_agent_small_retrieval",
+  "model_size": "small",
+  "mode": "retrieval",
+  "hybrid": false,
+  "perturbation": null,
+  "provider": "groq",
+  "n_cases": 1,
+  "n_llm_errors": 0,
+  "triage_lr": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "specificity": 0.0,
+    "flagged_rate": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "n": 1
+  },
+  "triage_llm_or_rules_only": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "specificity": 0.0,
+    "flagged_rate": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "n": 1
+  },
+  "triage_llm": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "specificity": 0.0,
+    "flagged_rate": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "n": 1
+  },
+  "triage_rules": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "specificity": 0.0,
+    "flagged_rate": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "n": 1
+  },
+  "triage_llm_or_rules_or_lr": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "specificity": 0.0,
+    "flagged_rate": 1.0,
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "n": 1,
+    "workload_at_population_prevalence": 0.14165336230482337
+  },
+  "coding": {
+    "micro_precision": 0.8333333333333334,
+    "micro_recall": 0.35714285714285715,
+    "micro_f1": 0.5,
+    "case_f1_mean": 0.5,
+    "exact_match": 0.0,
+    "n": 1
+  },
+  "product": {
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "case_f1_mean": 1.0,
+    "exact_match": 1.0,
+    "n": 1
+  },
+  "product_family": {
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "case_f1_mean": 1.0,
+    "exact_match": 1.0,
+    "n": 1
+  },
+  "case_correct_rate": 1.0,
+  "calibration": {
+    "combined": {
+      "ece": 0.038900000000000046,
+      "reliability": [
+        {
+          "bin": 9,
+          "n": 1,
+          "confidence": 0.9611,
+          "accuracy": 1.0
+        }
+      ],
+      "auroc": null
+    },
+    "risk_coverage": [
+      {
+        "coverage": 1.0,
+        "risk": 0.0,
+        "threshold": 0.9611
+      }
+    ]
+  },
+  "routing": {
+    "human_review_rate": 1.0,
+    "auto_rate": 0.0,
+    "serious_missed_by_agent_and_rules": 0,
+    "auto_error_rate": null,
+    "reasons": {
+      "uncoded_event": 1
+    }
+  },
+  "span_verifier": {
+    "cases_with_rejected_fields": 0,
+    "rejected_fields_total": 0
+  },
+  "validity": {
+    "valid_rate": 1.0
+  },
+  "expectedness_counts": {
+    "unlisted": 5,
+    "listed": 1,
+    "not_checked": 1
+  },
+  "cost": {
+    "prompt_tokens": 1340,
+    "completion_tokens": 566,
+    "tokens_per_case": 1906.0,
+    "seconds_per_case": 1.0311164855957031,
+    "escalated": 0,
+    "note": "multiply by your provider's paid $/token to get a paid-tier cost"
+  },
+  "per_term": {
+    "death": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "condition aggravated": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "sepsis": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "chest x-ray normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "intensive care": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "sars-cov-2 test positive": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "atrial fibrillation": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "urine analysis abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "urinary tract infection": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "covid-19": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "hypophagia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "critical illness": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "general physical health deterioration": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "mental status changes": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "decubitus ulcer": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    }
+  }
+}

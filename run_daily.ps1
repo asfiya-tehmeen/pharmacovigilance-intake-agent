@@ -18,7 +18,9 @@ foreach ($d in (Get-ChildItem results -Directory | Where-Object { $_.Name -like 
 }
 "main run for ablations: $main" | Tee-Object -Append $log
 if ($main) {
-  Step "ablation prompt_only" @("agent","--split","test","--like",$main,"--limit","100","--mode","prompt_only")
+  # prompt_only runs on the LARGE model so it pairs with the large-model retrieval run on the same 100 cases and
+  # uses the 120b quota (separate from the 20b quota that the main run needs).
+  Step "ablation prompt_only (large)" @("agent","--split","test","--like",$main,"--limit","100","--mode","prompt_only","--model","large")
   Step "large model"          @("agent","--split","test","--like",$main,"--limit","100","--model","large")
   Step "self-consistency k=2" @("agent","--split","test","--like",$main,"--limit","60","--consistency-k","2")
 }

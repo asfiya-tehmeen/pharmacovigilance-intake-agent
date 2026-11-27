@@ -1,0 +1,62 @@
+{
+  "n": 40,
+  "baselines": {
+    "clean": {
+      "rules_recall": 0.75,
+      "dictionary_f1": 0.35526315789473684
+    },
+    "typos": {
+      "rules_recall": 0.75,
+      "dictionary_f1": 0.33898305084745767
+    },
+    "abbreviations": {
+      "rules_recall": 0.75,
+      "dictionary_f1": 0.32413793103448274
+    },
+    "lay_language": {
+      "rules_recall": 0.75,
+      "dictionary_f1": 0.2906574394463668
+    },
+    "messy": {
+      "rules_recall": 0.75,
+      "dictionary_f1": 0.345514950166113
+    }
+  },
+  "agent_runs": {
+    "clean": {
+      "run": "20261127-011007-260244_robust_clean",
+      "n": 18,
+      "coding_f1": 0.49696969696969695,
+      "triage_llm_recall": 0.6153846153846154,
+      "triage_combined_recall": 1.0
+    },
+    "typos": {
+      "run": "20261127-012851-429944_robust_typos",
+      "n": null,
+      "coding_f1": null,
+      "triage_llm_recall": null,
+      "triage_combined_recall": null
+    },
+    "abbreviations": {
+      "run": "20261127-012853-066965_robust_abbreviations",
+      "n": null,
+      "coding_f1": null,
+      "triage_llm_recall": null,
+      "triage_combined_recall": null
+    },
+    "lay_language": {
+      "run": "20261127-012854-693887_robust_lay_language",
+      "n": null,
+      "coding_f1": null,
+      "triage_llm_recall": null,
+      "triage_combined_recall": null
+    },
+    "messy": {
+      "run": "20261127-012856-345301_robust_messy",
+      "n": null,
+      "coding_f1": null,
+      "triage_llm_recall": null,
+      "triage_combined_recall": null
+    }
+  }
+}

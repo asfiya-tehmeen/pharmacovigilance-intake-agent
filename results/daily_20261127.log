@@ -1,0 +1,90 @@
+﻿== dev small  00:18:11
+
+  25/150 cases  (1s, 0 tokens today)
+  50/150 cases  (1s, 0 tokens today)
+  75/150 cases  (2s, 0 tokens today)
+  100/150 cases  (3s, 0 tokens today)
+  125/150 cases  (4s, 0 tokens today)
+  150/150 cases  (5s, 0 tokens today)
+C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261127-001826-6
+38844_agent_small_retrieval
+  "run": "20261127-001826-638844_agent_small_retrieval",
+    "serious_missed_by_agent_and_rules": 1,
+
+
+== test main  00:18:32
+
+  25/300 cases  (1s, 0 tokens today)
+  50/300 cases  (2s, 0 tokens today)
+  75/300 cases  (3s, 0 tokens today)
+  100/300 cases  (4s, 0 tokens today)
+  125/300 cases  (4s, 0 tokens today)
+  150/300 cases  (5s, 0 tokens today)
+  175/300 cases  (149s, 29223 tokens today)
+  200/300 cases  (480s, 69373 tokens today)
+C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261127-001840-7
+17499_agent_small_retrieval
+  "run": "20261127-001840-717499_agent_small_retrieval",
+    "serious_missed_by_agent_and_rules": 1,
+
+
+main run for ablations: C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261127-001840-717499_agent_small_retrieval
+== ablation prompt_only (large)  00:40:11
+
+  25/100 cases  (831s, 33482 tokens today)
+  50/100 cases  (1045s, 64853 tokens today)
+  75/100 cases  (1268s, 100793 tokens today)
+  100/100 cases  (1748s, 134369 tokens today)
+C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261127-004025-8
+54335_agent_large_prompt_only
+  "run": "20261127-004025-854335_agent_large_prompt_only",
+    "serious_missed_by_agent_and_rules": 0,
+
+
+== large model  01:09:34
+
+  25/100 cases  (1s, 134369 tokens today)
+  50/100 cases  (2s, 134369 tokens today)
+  75/100 cases  (3s, 134369 tokens today)
+  100/100 cases  (4s, 134369 tokens today)
+C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261127-010942-6
+69565_agent_large_retrieval
+  "run": "20261127-010942-669565_agent_large_retrieval",
+    "serious_missed_by_agent_and_rules": 0,
+
+
+== self-consistency k=2  01:09:46
+
+C:\Users\exube\OneDrive\Desktop\resume-builder-main\projects\f-pharmacovigilance-intake-agent\results\20261127-010954-6
+64589_agent_small_retrieval
+  "run": "20261127-010954-664589_agent_small_retrieval",
+    "serious_missed_by_agent_and_rules": 0,
+
+
+== robustness (large)  01:09:58
+
+no cases processed (provider daily limit: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in 
+organization `org_01m89ehg0ee8xt5rz7vvgrcm3e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 
+199137, Re); nothing saved
+no cases processed (provider daily limit: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in 
+organization `org_01m89ehg0ee8xt5rz7vvgrcm3e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 
+199134, Re); nothing saved
+no cases processed (provider daily limit: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in 
+organization `org_01m89ehg0ee8xt5rz7vvgrcm3e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 
+199130, Re); nothing saved
+no cases processed (provider daily limit: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in 
+organization `org_01m89ehg0ee8xt5rz7vvgrcm3e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 
+199126, Re); nothing saved
+  "agent_runs": {
+
+
+budget per model per day: 190000  (today: 2026-11-27)
+2026-11-27  groq    openai/gpt-oss-120b          prompt=  106016 completion=  58093 calls=116
+2026-11-27  groq    openai/gpt-oss-20b           prompt=   78456 completion=  28079 calls=61
+2026-11-26  groq    openai/gpt-oss-120b          prompt=  124630 completion=  52425 calls=97
+2026-11-26  groq    openai/gpt-oss-20b           prompt=  135580 completion=  51086 calls=109
+2026-11-25  groq    openai/gpt-oss-120b          prompt=  136191 completion=  55619 calls=106
+2026-11-25  groq    openai/gpt-oss-20b           prompt=  283144 completion=  98581 calls=221
+2026-11-24  groq    openai/gpt-oss-120b          prompt=    5767 completion=   2292 calls=6
+2026-11-24  groq    openai/gpt-oss-20b           prompt=  112196 completion=  41233 calls=101
+2026-11-23  groq    openai/gpt-oss-20b           prompt=   36040 completion=  13349 calls=31

@@ -24,4 +24,7 @@ if ($main) {
   Step "large model"          @("agent","--split","test","--like",$main,"--limit","100","--model","large")
   Step "self-consistency k=2" @("agent","--split","test","--like",$main,"--limit","60","--consistency-k","2")
 }
+# 4. Robustness on the LARGE model (clean vs typos / abbreviations / lay language / messy, same 40 test cases; the
+#    comparison is within one model, and it uses the 120b quota). Resumes from the cache each day.
+Step "robustness (large)" @("robustness","--limit","40","--model","large")
 & $pv budget | Tee-Object -Append $log

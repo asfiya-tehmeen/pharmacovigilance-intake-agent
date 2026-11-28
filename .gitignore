@@ -12,3 +12,5 @@ results/**/reviews.jsonl
 app/demo/reviews.jsonl
 results/daily_*.log
 results/**/signals_official.csv
+results_v1/**/cases.jsonl
+results_v1/*.log

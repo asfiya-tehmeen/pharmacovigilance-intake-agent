@@ -4,6 +4,8 @@ Turns free-text vaccine adverse-event reports (real VAERS narratives) into struc
 uncertain ones to a human, and measures whether its coding errors would change which disproportionality signals
 (PRR/ROR) a safety team detects. Plan: [`ideation.md`](ideation.md).
 
+**Live demo (review queue, 29 real VAERS test cases):** https://pharmacovigilance-intake-agent.streamlit.app/
+
 > Decision-support and triage study. No causal claims: VAERS cannot establish that a vaccine causes an event.
 > Not clinically or regulatorily validated. Does not replace PV professionals.
 
@@ -112,9 +114,9 @@ Deploy on Streamlit Community Cloud:
 2. At https://share.streamlit.io sign in with GitHub, choose **Create app → Deploy a public app from GitHub**.
 3. Repository `asfiya-tehmeen/pharmacovigilance-intake-agent`, branch `main`, main file path `app/review_app.py`.
 4. Advanced settings: Python 3.13 (the version the app was tested on). No secrets are needed. Dependencies come from `app/requirements.txt`.
-5. Deploy, then put the app URL here and in the Loom demo.
+5. Deploy. Live at https://pharmacovigilance-intake-agent.streamlit.app/
 
 ## Not done / stretch
 MedDRA hierarchy roll-ups (licence needed), Arabic translation round-trip (`evaluation/perturb.py:
 translation_round_trip` exists but is not wired into a command), FAERS drug-side signal comparison via openFDA,
-label-version pinning by report date, Loom demo and deployment.
+label-version pinning by report date, Loom demo.

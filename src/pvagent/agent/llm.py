@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sqlite3
 import time
 from dataclasses import dataclass
@@ -23,6 +24,11 @@ PROVIDERS = {
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", "GEMINI_API_KEY"),
     "ollama": (None, None),
 }
+
+
+def _redact(text: str) -> str:
+    """Provider error messages include the account's organisation id; keep it out of saved results and logs."""
+    return re.sub(r"org_[A-Za-z0-9]+", "org_<redacted>", text)
 
 
 class BudgetExceeded(RuntimeError):
@@ -108,11 +114,11 @@ class LLMClient:
             if r.status_code == 429 or r.status_code >= 500:
                 wait = float(r.headers.get("retry-after", 0) or 0) or min(60, 2 ** attempt * 2)
                 if "tokens per day" in r.text.lower() or "per day" in r.text.lower():
-                    raise BudgetExceeded(f"provider daily limit: {r.text[:200]}")
+                    raise BudgetExceeded(f"provider daily limit: {_redact(r.text)[:200]}")
                 time.sleep(wait)
                 continue
             if r.status_code >= 400:
-                raise LLMError(f"{r.status_code}: {r.text[:500]}")
+                raise LLMError(f"{r.status_code}: {_redact(r.text)[:500]}")
             break
         else:
             raise LLMError(f"gave up after retries: {r.status_code} {r.text[:200]}")

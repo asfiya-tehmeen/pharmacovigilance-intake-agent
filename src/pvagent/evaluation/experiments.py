@@ -134,6 +134,15 @@ def lr_triage_scores(con):
     return _LR_CACHE["v"]
 
 
+def lr_model_on_dev(con):
+    """The logistic-regression triage model fit on all dev cases (same model that scores test cases). Cached."""
+    if "m" not in _LR_CACHE:
+        from ..baselines.triage_lr import make_model
+        dev = get_cases(con, "dev")
+        _LR_CACHE["m"] = make_model().fit(list(dev["SYMPTOM_TEXT"]), dev["SERIOUS"].astype(int).to_numpy())
+    return _LR_CACHE["m"]
+
+
 def make_agent(con, model_size: str = "small", mode: str = "retrieval", hybrid: bool = False,
                consistency_k: int | None = None, provider: str | None = None) -> IntakeAgent:
     cfg = load_config()
@@ -163,6 +172,12 @@ def run_agent(split: str = "test", limit: int | None = None, model_size: str = "
     if ids is None:
         cases = stratified_subset(cases, limit or cfg["sample"]["llm_subset"], cfg["sample"]["seed"])
     agent = agent or make_agent(con, model_size, mode, hybrid, consistency_k, provider)
+    if perturbation:
+        # The regression layer must see the same perturbed text as the rules and the LLM; precomputed scores are
+        # for the clean narratives.
+        texts = [PERTURBATIONS[perturbation](t, seed=int(i)) for t, i in zip(cases["SYMPTOM_TEXT"], cases["VAERS_ID"])]
+        probs = lr_model_on_dev(con).predict_proba(texts)[:, 1]
+        agent.lr_scores = {**agent.lr_scores, **{int(i): float(p) for i, p in zip(cases["VAERS_ID"], probs)}}
     tag = name or f"agent_{'hybrid' if hybrid else model_size}_{mode}" + (f"_{perturbation}" if perturbation else "")
     d = _run_dir(tag)
     meta = {"split": split, "n_planned": len(cases), "model_size": model_size, "mode": mode, "hybrid": hybrid,

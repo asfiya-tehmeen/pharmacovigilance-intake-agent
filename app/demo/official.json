@@ -1,0 +1,434 @@
+{
+ "2447914": {
+  "serious": true,
+  "terms": [
+   "Atrial fibrillation",
+   "COVID-19",
+   "Chest X-ray normal",
+   "Condition aggravated",
+   "Death",
+   "Decubitus ulcer",
+   "General physical health deterioration",
+   "Hypophagia",
+   "Intensive care",
+   "Mental status changes",
+   "SARS-CoV-2 test positive",
+   "Sepsis",
+   "Urinary tract infection",
+   "Urine analysis abnormal"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2550324": {
+  "serious": true,
+  "terms": [
+   "COVID-19",
+   "Chest X-ray normal",
+   "Cough",
+   "Dyspnoea",
+   "Hypoxia",
+   "Nasal congestion",
+   "Oxygen saturation decreased",
+   "SARS-CoV-2 test positive"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2554581": {
+  "serious": true,
+  "terms": [
+   "Acute respiratory failure",
+   "Anticoagulant therapy",
+   "Blood gases",
+   "Blood potassium decreased",
+   "C-reactive protein increased",
+   "COVID-19",
+   "Chest X-ray abnormal",
+   "Computerised tomogram thorax abnormal",
+   "Fibrin D dimer",
+   "Oxygen saturation decreased",
+   "Pleural effusion",
+   "Pneumonia",
+   "Productive cough",
+   "SARS-CoV-2 test positive",
+   "Troponin normal",
+   "White blood cell count increased"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2560123": {
+  "serious": true,
+  "terms": [
+   "Chills",
+   "Head injury",
+   "Loss of consciousness",
+   "Vomiting"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2561086": {
+  "serious": false,
+  "terms": [
+   "Arthralgia",
+   "Injection site rash",
+   "Myalgia",
+   "Pyrexia"
+  ],
+  "vax_types": [
+   "VARZOS"
+  ]
+ },
+ "2562214": {
+  "serious": false,
+  "terms": [
+   "Cough",
+   "Decreased appetite",
+   "Influenza virus test negative",
+   "Pain",
+   "Pyrexia",
+   "Respiratory syncytial virus test positive",
+   "Respiratory tract congestion",
+   "SARS-CoV-2 test negative"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2563511": {
+  "serious": true,
+  "terms": [
+   "Acute respiratory failure",
+   "COVID-19",
+   "COVID-19 pneumonia",
+   "Chronic obstructive pulmonary disease",
+   "Confusional state",
+   "Death",
+   "Hypoxia",
+   "Pneumonia",
+   "Respiratory failure",
+   "SARS-CoV-2 test positive",
+   "Superinfection"
+  ],
+  "vax_types": [
+   "COVID19",
+   "COVID19-2"
+  ]
+ },
+ "2563524": {
+  "serious": true,
+  "terms": [
+   "Anxiety",
+   "Blood test",
+   "Computerised tomogram",
+   "Condition aggravated",
+   "Dizziness",
+   "Fatigue",
+   "Feeling abnormal",
+   "Hyperhidrosis",
+   "Laboratory test",
+   "Loss of personal independence in daily activities",
+   "Magnetic resonance imaging",
+   "Memory impairment",
+   "Migraine",
+   "Nausea",
+   "New daily persistent headache",
+   "Palpitations",
+   "Pollakiuria",
+   "Postural orthostatic tachycardia syndrome",
+   "Sinus tachycardia",
+   "Tilt table test",
+   "Visual impairment"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2564587": {
+  "serious": true,
+  "terms": [
+   "Computerised tomogram thorax abnormal",
+   "Pulmonary embolism"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2564859": {
+  "serious": false,
+  "terms": [
+   "Chills",
+   "Pain"
+  ],
+  "vax_types": [
+   "VARZOS"
+  ]
+ },
+ "2564870": {
+  "serious": false,
+  "terms": [
+   "Expired product administered"
+  ],
+  "vax_types": [
+   "HEPAB"
+  ]
+ },
+ "2565074": {
+  "serious": false,
+  "terms": [
+   "Hypotension",
+   "Syncope",
+   "Vomiting"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2565613": {
+  "serious": true,
+  "terms": [
+   "COVID-19",
+   "Death",
+   "Diarrhoea haemorrhagic",
+   "Rectal haemorrhage",
+   "SARS-CoV-2 test positive",
+   "Urinary tract infection"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2565825": {
+  "serious": false,
+  "terms": [
+   "Extra dose administered",
+   "No adverse event"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2566801": {
+  "serious": false,
+  "terms": [
+   "Product label issue"
+  ],
+  "vax_types": [
+   "COVID19-2",
+   "TDAP"
+  ]
+ },
+ "2567651": {
+  "serious": true,
+  "terms": [
+   "COVID-19",
+   "SARS-CoV-2 test positive",
+   "Vaccine breakthrough infection"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2568919": {
+  "serious": false,
+  "terms": [
+   "COVID-19",
+   "Drug ineffective"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2569698": {
+  "serious": true,
+  "terms": [
+   "Ammonia",
+   "Blood albumin",
+   "Blood calcium",
+   "Blood chloride",
+   "Blood creatinine",
+   "Blood electrolytes",
+   "Blood glucose",
+   "Blood magnesium",
+   "Blood phosphorus",
+   "Blood potassium",
+   "Blood sodium",
+   "Blood urea",
+   "Carbon dioxide",
+   "Differential white blood cell count",
+   "Dyskinesia",
+   "Electroencephalogram",
+   "Full blood count",
+   "Gene mutation identification test negative",
+   "Infantile spasms",
+   "Influenza A virus test",
+   "Influenza B virus test",
+   "Liver function test",
+   "Magnetic resonance imaging head",
+   "Polymerase chain reaction",
+   "SARS-CoV-2 test",
+   "Seizure",
+   "Somnolence",
+   "Staphylococcus test"
+  ],
+  "vax_types": [
+   "DTAPHEPBIP",
+   "HIBV",
+   "PNC13",
+   "RV1"
+  ]
+ },
+ "2570038": {
+  "serious": true,
+  "terms": [
+   "Arthralgia",
+   "Autoimmune disorder",
+   "Blood test",
+   "C-reactive protein increased",
+   "Electromyogram normal",
+   "Full blood count",
+   "HLA-B*27 assay",
+   "Inflammatory marker increased",
+   "Laboratory test",
+   "Red blood cell sedimentation rate increased",
+   "Rheumatoid factor",
+   "Synovial fluid analysis abnormal",
+   "Systemic inflammatory response syndrome",
+   "Ultrasound scan abnormal"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2571603": {
+  "serious": false,
+  "terms": [
+   "Expired product administered",
+   "No adverse event"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2573388": {
+  "serious": false,
+  "terms": [
+   "Cough",
+   "Fatigue",
+   "Injection site erythema",
+   "Injection site induration",
+   "Injection site reaction",
+   "Lymphadenopathy",
+   "Malaise",
+   "Rhinorrhoea",
+   "Skin lesion"
+  ],
+  "vax_types": [
+   "PNC20"
+  ]
+ },
+ "2574439": {
+  "serious": true,
+  "terms": [
+   "Thrombosis"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2582745": {
+  "serious": true,
+  "terms": [
+   "Blood glucose normal",
+   "Blood test normal",
+   "Computerised tomogram head normal",
+   "Electroencephalogram abnormal",
+   "Magnetic resonance imaging head abnormal",
+   "Pyrexia",
+   "Seizure"
+  ],
+  "vax_types": [
+   "DTAPHEPBIP",
+   "RV5",
+   "UNK"
+  ]
+ },
+ "2589262": {
+  "serious": true,
+  "terms": [
+   "COVID-19",
+   "Dyspnoea",
+   "SARS-CoV-2 test positive"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2592520": {
+  "serious": true,
+  "terms": [
+   "COVID-19",
+   "SARS-CoV-2 test positive",
+   "Vaccine breakthrough infection"
+  ],
+  "vax_types": [
+   "COVID19"
+  ]
+ },
+ "2593903": {
+  "serious": false,
+  "terms": [
+   "Atrial fibrillation",
+   "COVID-19",
+   "Heart rate increased",
+   "Malaise",
+   "Palpitations",
+   "SARS-CoV-2 test positive"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2596092": {
+  "serious": false,
+  "terms": [
+   "COVID-19",
+   "Cough",
+   "Nasal congestion",
+   "Oropharyngeal pain",
+   "SARS-CoV-2 test positive"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2607535": {
+  "serious": false,
+  "terms": [
+   "Blood test normal",
+   "Injection site pruritus",
+   "Pruritus"
+  ],
+  "vax_types": [
+   "COVID19-2"
+  ]
+ },
+ "2692776": {
+  "serious": true,
+  "terms": [
+   "Injection site erythema",
+   "Injection site reaction",
+   "Injection site warmth"
+  ],
+  "vax_types": [
+   "DTAPIPV",
+   "MMR"
+  ]
+ }
+}

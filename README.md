@@ -97,9 +97,22 @@ notes/data-terms.md       VAERS / DailyMed terms of use checklist
 ```
 
 ## Status
-Built and tested offline: full pipeline, all baselines, agent, evaluation, signal comparison, robustness, review UI.
-Live-checked: DailyMed label retrieval. **Not yet run on real VAERS data; no results exist yet.** REPORT.md is
-written only after real runs, with measured numbers only.
+Run on real VAERS data (2023-2024). Main results on 300 held-out test cases, ablations, calibration, signal impact and
+robustness are in [`REPORT.md`](REPORT.md). Still running: self-consistency calibration and one robustness condition.
+
+## Review UI: local and public demo
+- **Local:** `pv review` shows the bundled demo set plus every run in `results/`; decisions go to `<run>/reviews.jsonl`.
+- **Public demo:** `app/demo/` holds 29 test cases (agent output plus the official VAERS coding for comparison). On
+  Streamlit Community Cloud, or with `PV_DEMO_ONLY=1`, the app shows only this set and keeps decisions in the
+  visitor's session (downloadable as JSON). No LLM calls, no API keys, no database.
+- Full narratives in `results/*/cases.jsonl` are git-ignored; only the demo set is published.
+
+Deploy on Streamlit Community Cloud:
+1. Push this repo to GitHub.
+2. At https://share.streamlit.io sign in with GitHub, choose **Create app → Deploy a public app from GitHub**.
+3. Repository `asfiya-tehmeen/pharmacovigilance-intake-agent`, branch `main`, main file path `app/review_app.py`.
+4. Advanced settings: Python 3.13 (the version the app was tested on). No secrets are needed. Dependencies come from `app/requirements.txt`.
+5. Deploy, then put the app URL here and in the Loom demo.
 
 ## Not done / stretch
 MedDRA hierarchy roll-ups (licence needed), Arabic translation round-trip (`evaluation/perturb.py:

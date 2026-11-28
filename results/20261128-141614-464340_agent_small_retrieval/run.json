@@ -1,0 +1,16 @@
+{
+  "split": "test",
+  "n_planned": 60,
+  "model_size": "small",
+  "mode": "retrieval",
+  "hybrid": false,
+  "consistency_k": 2,
+  "provider": "groq",
+  "small_model": "openai/gpt-oss-20b",
+  "large_model": null,
+  "perturbation": null,
+  "started": "2026-11-28T14:16:14.465444",
+  "n_done": 17,
+  "stopped_early": "groq/openai/gpt-oss-20b: daily budget 190000 tokens reached",
+  "finished": "2026-11-28T14:16:16.153064"
+}

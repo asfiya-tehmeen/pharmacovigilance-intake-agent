@@ -1,0 +1,490 @@
+{
+  "run": "20261128-143043-694180_robust_messy",
+  "model_size": "large",
+  "mode": "retrieval",
+  "hybrid": false,
+  "perturbation": "messy",
+  "provider": "groq",
+  "n_cases": 10,
+  "n_llm_errors": 0,
+  "triage_lr": {
+    "recall": 1.0,
+    "precision": 0.8333333333333334,
+    "f1": 0.9090909090909091,
+    "specificity": 0.8,
+    "flagged_rate": 0.6,
+    "tp": 5,
+    "fp": 1,
+    "fn": 0,
+    "tn": 4,
+    "n": 10
+  },
+  "triage_llm_or_rules_only": {
+    "recall": 0.8,
+    "precision": 0.8,
+    "f1": 0.8000000000000002,
+    "specificity": 0.8,
+    "flagged_rate": 0.5,
+    "tp": 4,
+    "fp": 1,
+    "fn": 1,
+    "tn": 4,
+    "n": 10
+  },
+  "triage_llm": {
+    "recall": 0.8,
+    "precision": 1.0,
+    "f1": 0.888888888888889,
+    "specificity": 1.0,
+    "flagged_rate": 0.4,
+    "tp": 4,
+    "fp": 0,
+    "fn": 1,
+    "tn": 5,
+    "n": 10
+  },
+  "triage_rules": {
+    "recall": 0.8,
+    "precision": 0.8,
+    "f1": 0.8000000000000002,
+    "specificity": 0.8,
+    "flagged_rate": 0.5,
+    "tp": 4,
+    "fp": 1,
+    "fn": 1,
+    "tn": 4,
+    "n": 10
+  },
+  "triage_llm_or_rules_or_lr": {
+    "recall": 1.0,
+    "precision": 0.7142857142857143,
+    "f1": 0.8333333333333333,
+    "specificity": 0.6,
+    "flagged_rate": 0.7,
+    "tp": 5,
+    "fp": 2,
+    "fn": 0,
+    "tn": 3,
+    "n": 10,
+    "workload_at_population_prevalence": 0.484992017382894
+  },
+  "coding": {
+    "micro_precision": 0.6122448979591837,
+    "micro_recall": 0.6,
+    "micro_f1": 0.6060606060606062,
+    "case_f1_mean": 0.5847911338448422,
+    "exact_match": 0.0,
+    "n": 10
+  },
+  "product": {
+    "micro_precision": 1.0,
+    "micro_recall": 0.2,
+    "micro_f1": 0.33333333333333337,
+    "case_f1_mean": 0.2,
+    "exact_match": 0.2,
+    "n": 10
+  },
+  "product_family": {
+    "micro_precision": 1.0,
+    "micro_recall": 0.2,
+    "micro_f1": 0.33333333333333337,
+    "case_f1_mean": 0.2,
+    "exact_match": 0.2,
+    "n": 10
+  },
+  "case_correct_rate": 0.7,
+  "calibration": {
+    "self": {
+      "ece": 0.20300000000000007,
+      "auroc": 0.7619047619047619,
+      "n": 10
+    },
+    "span": {
+      "ece": 0.31111111111111117,
+      "auroc": 0.42857142857142855,
+      "n": 10
+    },
+    "triage_agree": {
+      "ece": 0.2,
+      "auroc": 0.7619047619047621,
+      "n": 10
+    },
+    "combined": {
+      "ece": 0.18446000000000007,
+      "reliability": [
+        {
+          "bin": 7,
+          "n": 3,
+          "confidence": 0.7125,
+          "accuracy": 0.3333333333333333
+        },
+        {
+          "bin": 9,
+          "n": 7,
+          "confidence": 0.9581571428571429,
+          "accuracy": 0.8571428571428571
+        }
+      ],
+      "auroc": 0.9047619047619049
+    },
+    "risk_coverage": [
+      {
+        "coverage": 0.1,
+        "risk": 0.0,
+        "threshold": 0.9925
+      },
+      {
+        "coverage": 0.2,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.3,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.4,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.5,
+        "risk": 0.0,
+        "threshold": 0.9625
+      },
+      {
+        "coverage": 0.6,
+        "risk": 0.0,
+        "threshold": 0.9396
+      },
+      {
+        "coverage": 0.7,
+        "risk": 0.1428571428571429,
+        "threshold": 0.925
+      },
+      {
+        "coverage": 0.8,
+        "risk": 0.25,
+        "threshold": 0.7125
+      },
+      {
+        "coverage": 0.9,
+        "risk": 0.33333333333333337,
+        "threshold": 0.7125
+      },
+      {
+        "coverage": 1.0,
+        "risk": 0.30000000000000004,
+        "threshold": 0.7125
+      }
+    ]
+  },
+  "routing": {
+    "human_review_rate": 0.3,
+    "auto_rate": 0.7,
+    "serious_missed_by_agent_and_rules": 0,
+    "auto_error_rate": 0.1428571428571429,
+    "reasons": {
+      "low_confidence": 3,
+      "triage_disagreement": 3
+    }
+  },
+  "span_verifier": {
+    "cases_with_rejected_fields": 1,
+    "rejected_fields_total": 1
+  },
+  "validity": {
+    "valid_rate": 1.0
+  },
+  "expectedness_counts": {
+    "unlisted": 34,
+    "listed": 9,
+    "no_label": 7
+  },
+  "cost": {
+    "prompt_tokens": 11609,
+    "completion_tokens": 5156,
+    "tokens_per_case": 1676.5,
+    "seconds_per_case": 10.972345805168152,
+    "escalated": 0,
+    "note": "multiply by your provider's paid $/token to get a paid-tier cost"
+  },
+  "per_term": {
+    "sars-cov-2 test positive": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1
+    },
+    "covid-19": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1
+    },
+    "fatigue": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "cough": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "nasal disorder": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "upper-airway cough syndrome": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "chest pain": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "troponin increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "myocardial ischaemia": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "hypoxia": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "oxygen saturation decreased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "atrial fibrillation": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1
+    },
+    "troponin": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "limb discomfort": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pain in extremity": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "pain": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0
+    },
+    "injection site pain": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0
+    },
+    "injection site reaction": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "discomfort": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "breakthrough covid-19": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "vaccine breakthrough infection": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "body temperature abnormal": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "bronchoalveolar lavage abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "skin lesion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "scab": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "rash vesicular": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "blister": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "varicella virus test positive": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "blood blister": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "rash pustular": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "rash": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "body temperature increased": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "viral test positive": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "chest x-ray abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "atelectasis": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "pneumonia": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "electrocardiogram abnormal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "acute respiratory failure": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "computerised tomogram head normal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "covid-19 pneumonia": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "oxygen saturation": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "sepsis": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "pneumonia viral": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "confusional state": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "death": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "expired product administered": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "product administration error": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "product dispensing error": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "product lot number issue": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    "medication error": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "no adverse event": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "product dispensing issue": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "product administered to patient of inappropriate age": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "injection site erythema": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "erythema": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    }
+  }
+}

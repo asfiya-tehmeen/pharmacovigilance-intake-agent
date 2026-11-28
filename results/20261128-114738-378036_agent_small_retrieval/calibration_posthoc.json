@@ -1,0 +1,36 @@
+{
+  "dev_run": "20261128-114724-527965_agent_small_retrieval",
+  "test_run": "20261128-114738-378036_agent_small_retrieval",
+  "n_dev": 150,
+  "n_test": 300,
+  "case_error_rate_all": 0.45666666666666667,
+  "hand_weighted": {
+    "ece": 0.30929033333333344,
+    "auroc": 0.6922215753884735,
+    "error_at_50pct_coverage": 0.30666666666666664,
+    "error_at_80pct_coverage": 0.375
+  },
+  "three_confidence_parts": {
+    "ece": 0.07988979139703754,
+    "auroc": 0.6992521606735032,
+    "error_at_50pct_coverage": 0.30666666666666664,
+    "error_at_80pct_coverage": 0.375
+  },
+  "all_features": {
+    "ece": 0.13113234178891023,
+    "auroc": 0.756571582105593,
+    "error_at_50pct_coverage": 0.31999999999999995,
+    "error_at_80pct_coverage": 0.35416666666666663
+  },
+  "univariate_auroc_test": {
+    "self_rating": 0.6533070619318436,
+    "span_pass": 0.5115534458824057,
+    "triage_agree": 0.6354171331333125,
+    "n_events": 0.46430970399892524,
+    "frac_coded": 0.5470422282925083,
+    "sqrt_narrative_len": 0.5214276118400429,
+    "n_rejected": 0.48790918454166854,
+    "lr_score": 0.26219157225381756,
+    "patient_identified": 0.47778872419506513
+  }
+}

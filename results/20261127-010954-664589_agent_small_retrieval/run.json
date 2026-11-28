@@ -11,6 +11,6 @@
   "perturbation": null,
   "started": "2026-11-27T01:09:54.665085",
   "n_done": 2,
-  "stopped_early": "provider daily limit: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m89ehg0ee8xt5rz7vvgrcm3e` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198276, Req",
+  "stopped_early": "provider daily limit: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_<redacted>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198276, Req",
   "finished": "2026-11-27T01:09:57.501669"
 }

@@ -6,3 +6,9 @@ data/processed/
 data/cache/
 results/*.jsonl
 .pytest_cache/
+# Full VAERS narratives stay local; only the small demo set in app/demo/ is published.
+results/**/cases.jsonl
+results/**/reviews.jsonl
+app/demo/reviews.jsonl
+results/daily_*.log
+results/**/signals_official.csv
